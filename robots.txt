@@ -1,1 +1,1 @@
-Sitemap: https://github.com/philiporlando/do4ds/sitemap.xml
+Sitemap: https://philiporlando.github.io/do4ds/sitemap.xml
