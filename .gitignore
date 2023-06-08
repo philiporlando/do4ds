@@ -9,5 +9,7 @@
 /eda_files/
 /.quarto/
 /_site/
+/doc/
+/model_files/
 _environment
 
