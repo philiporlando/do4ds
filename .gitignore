@@ -3,7 +3,10 @@
 .RData
 .Ruserdat
 .Renviron
-.venv/
+/.venv/
 *.html
 *.ipynb
-eda_files/
+/eda_files/
+/.quarto/
+/_site/
+
