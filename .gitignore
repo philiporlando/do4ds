@@ -9,4 +9,6 @@
 /eda_files/
 /.quarto/
 /_site/
+_environment
+/_freeze/
 
