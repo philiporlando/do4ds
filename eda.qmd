@@ -11,6 +11,7 @@ format:
 ```{r}
 library(palmerpenguins)
 library(dplyr)
+library(dbplyr)
 library(ggplot2)
 
 # df <- palmerpenguins::penguins
