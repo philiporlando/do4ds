@@ -11,12 +11,24 @@ from pandas import get_dummies
 import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn import preprocessing
+import duckdb
+from pins import board_folder
+from vetiver import vetiver_pin_write
+
+model_board = board_folder("/data/model", allow_pickle_read = True)
 ```
 
 ## Get Data
 
 ```{python}
-df = penguins.load_penguins().dropna()
+# con = duckdb.connect("my-db.duckdb")
+# df = penguins.load_penguins()
+# con.execute("CREATE TABLE penguins AS SELECT * FROM df")
+# con.close()
+
+con = duckdb.connect("my-db.duckdb")
+df = con.execute("SELECT * FROM penguins").fetchdf().dropna()
+con.close()
 
 df.head(3)
 ```
