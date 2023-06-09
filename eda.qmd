@@ -46,5 +46,5 @@ df %>% ggplot(aes(x = bill_length_mm, y = body_mass_g, color = species)) +
 ```
 
 ```{r}
-DBI::dbDisconnect(con)
+DBI::dbDisconnect(con, shutdown = TRUE)
 ```
